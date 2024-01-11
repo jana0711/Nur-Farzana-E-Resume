@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CONTACT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: url(IMAGES/TECH.jpg);
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #0061a1;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #4b96f8;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color:#00395f;
+  color: #f5f5dc;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color:#dff2ff;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  color: beige;
+  text-align: center;
+  background: #333;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="IMAGES/" alt="BANNER" width="1200" height="300">
+</div>
+
+<div class="navbar">
+  <a href="INDEX.html" class="active">HOME</a>
+  <a href="PROFILE.html">PROFILE</a>
+  <a href="EDUCATION.html">EDUCATION</a>
+  <a href="SKILLS.html">SKILLS</a>
+  <a href="EXPERIENCE.html">EXPERIENCE</a>
+  <a href="CONTACT.html" class="right">CONTACT</a>
+</div>
+
+  <div class="main">
+    <center><h2>EXPERIENCE</h2></center>
+    <center><h2>Kong, Razali & Partners</h2></center>
+    <center><h4>Part-Time Clerk | Law Firm, Wisma UOA | April 2020 - February 2021</h4></center>
+        <p>
+        <ol>
+            <li>Engaged in a dynamic role at the law firm by contributing to the efficient management of client files and correspondence.
+            <li>Responded to the urgent need for support in managing client files and facilitating email communications within the law firm.
+            <li>Successfully organized and maintained client files, ensuring quick and accurate retrieval of essential documents for legal proceedings.
+            <li>Played a key role in the timely dissemination of letters via email, contributing to streamlined communication and enhanced client service.
+            <li>Received tremendous support and mentorship from my father's colleagues, who treated me with exceptional warmth and consideration, akin to being part of their extended professional family.
+            <li>Experienced heartwarming moments such as being rewarded with chocolates and treated to delicious meals, fostering a positive and collaborative work environment.
+            <li>Fondly recall a memorable iftar during the first month of Ramadan in 2021, where my father's colleagues took me to a restaurant specializing in Western cuisine. Their generosity and camaraderie left a lasting impression, creating a sense of belonging within the workplace.
+            <li>Contributed to the team for approximately a year, gaining valuable work experience before embarking on my university journey.
+            <li>Received a monthly salary of RM 1200, reflecting my dedication and contributions to the law firm during this period.
+        </li>
+        </ol>
+        </p>
+    <center><img src="IMAGES/UOA.jpg" width="500" height="350" alt="Helper"></center>
+  </div>
+</div>
+
+<div class="footer">
+  <h4>© 2023 Nur Farzana's Resume. All Rights Reserved.</h4>
+  <h5>This website are for the purpose of assignment on HTML only.<br>Recommended browser Google Chrome.<br>Resolution 1366 X 768.</h5>
+  <h4>Last updated : </h4>
+    <p id="demo"></p>
+    <script>
+    let text = document.lastModified;
+    document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

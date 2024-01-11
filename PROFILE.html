@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PROFILE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: url(IMAGES/TECH.jpg);
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #0061a1;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #4b96f8;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color:#00395f;
+  color: #f5f5dc;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color:#dff2ff;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  color: beige;
+  text-align: center;
+  background: #333;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="IMAGES/BANNER 1.png" alt="BANNER" width="1200" height="300">
+</div>
+
+<div class="navbar">
+  <a href="INDEX.html" class="active">HOME</a>
+  <a href="PROFILE.html">PROFILE</a>
+  <a href="EDUCATION.html">EDUCATION</a>
+  <a href="SKILLS.html">SKILLS</a>
+  <a href="EXPERIENCE.html">EXPERIENCE</a>
+  <a href="CONTACT.html" class="right">CONTACT</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>BACKGROUND DETAILS</h2>
+    <p>Name : Nur Farzana Binti Harmidi</p>
+    <p>Date of Birth: 07 November 2001</p>
+    <p>Gender : Female</p>
+    <p>Nationality : Malaysian</p>
+    <p>Race : Malay</p>
+    <img src="IMAGES/JANA.jpg" alt="ME" width="150" height="200">
+  </div>
+  <div class="main">
+    <center><h2>PROFILE</h2></center>
+    <center><p>A dynamic and results-oriented professional with a solid background in  developing and implementing robust records management systems. Possessing 9 years of experience in implementing robust record management systems while ensuring compliance with industry standards and regulations.  adept at utilizing technology to streamline processes and enhance data security.  Recognized for addressing challenges related to data organization, storage, or retrieval demands a strong problem-solving mindset to find efficient solutions. My approach revolves around implementing meticulous record-keeping practices to ensure data accuracy, compliance, and accessibility. I am dedicated to driving impactful change by leveraging advanced records management systems, fostering a culture of compliance, and spearheading collaborative efforts across departments.</p></center>
+    <center>
+      <video width="800" height="540" controls>
+      <source src="VIDEO/VIDRESUME.mp4" type="video/mp4">
+      <source src="VIDEO/VIDRESUME.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </center>
+  </div>
+</div>
+
+<div class="footer">
+  <h4>© 2023 Nur Farzana's Resume. All Rights Reserved.</h4>
+  <h5>This website are for the purpose of assignment on HTML only.<br>Recommended browser Google Chrome.<br>Resolution 1366 X 768.</h5>
+  <h4>Last updated : </h4>
+    <p id="demo"></p>
+    <script>
+    let text = document.lastModified;
+    document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EDUCATION</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: url(IMAGES/TECH.jpg);
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #0061a1;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #4b96f8;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color:#00395f;
+  color: #f5f5dc;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color:#dff2ff;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+}
+
+table, td, th {
+  border: 2px solid;
+  text-align:center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  color: beige;
+  text-align: center;
+  background: #333;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="IMAGES/BANNER 1.png" alt="BANNER" width="1200" height="300">
+</div>
+
+<div class="navbar">
+  <a href="INDEX.html" class="active">HOME</a>
+  <a href="PROFILE.html">PROFILE</a>
+  <a href="EDUCATION.html">EDUCATION</a>
+  <a href="SKILLS.html">SKILLS</a>
+  <a href="EXPERIENCE.html">EXPERIENCE</a>
+  <a href="CONTACT.html" class="right">CONTACT</a>
+</div>
+
+  <div class="main">
+    <center><h2>EDUCATION</h2></center>
+    <table>
+      <tr>
+        <center><td><img src="IMAGES/SKJRM.jpg" alt="SKJRM" width="170" height="170"><img src="IMAGES/SKJHT.jpg" alt="SKJHT" width="170" height="170"></td></center>
+        <td>
+          <h4>PRIMARY SCHOOL</h4>
+          <li>Standard 1 - SK HANG TUAH (2008)
+          <li>Standard 2 - SK HANG TUAH (2009)
+          <li>Standard 3 - SKJRM(2010)
+          <li>Standard 4 - SKJRM(2011)
+          <li>Standard 5 - SKJRM(2012)
+          <li>Standard 6 - SKJRM(2013)
+      </td>
+      </tr>
+      <tr>
+        <center><td><img src="IMAGES/PW.png" alt="PW" width="170" height="170"></td></center>
+        <td>
+        <h4>SECONDARY SCHOOL</h4>
+          <li>Form 1 - SMK PUTERI WILAYAH(2014)
+          <li>Form 2 - SMK PUTERI WILAYAH(2015)
+          <li>Form 3 - SMK PUTERI WILAYAH(2016)
+          <li>Form 4 - SMK PUTERI WILAYAH(2017)
+          <li>Form 5 - SMK PUTERI WILAYAH(2018)
+      </td>
+      </tr>
+      <tr>
+        <center><td><img src="IMAGES/UITM.png" alt="PW" width="250" height="100"></td></center>
+        <td>
+          <h4>TERTIARY EDUCATION</h4>
+          <li>DIPLOMA INFORMATION MANAGEMENT - CAMPUS UiTM SEGAMAT (2020-2022)</li><br>
+          <li>BACHELOR OF INFORMATION OF SCIENCE (hons) RECORDS MANAGEMENT - CAMPUS UiTM PUNCAK PERDANA (2022-2025)</li>
+        </td>
+        </tr>
+    </table>
+  </div>
+</div>
+
+<div class="footer">
+  <h4>© 2023 Nur Farzana's Resume. All Rights Reserved.</h4>
+  <h5>This website are for the purpose of assignment on HTML only.<br>Recommended browser Google Chrome.<br>Resolution 1366 X 768.</h5>
+  <h4>Last updated : </h4>
+    <p id="demo"></p>
+    <script>
+    let text = document.lastModified;
+    document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

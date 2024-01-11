@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nur Farzana's Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+.header {
+  padding: 20px ;
+  text-align: center;
+  background: url(IMAGES/TECH.jpg);
+  color: rgba(255, 255, 255, 0);
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #0061a1;
+  color: white;
+}
+
+.navbar a.active {
+  background-color: #4b96f8;
+  color: white;
+}
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: #dff2ff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #333;
+  color: #f2f2f2;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<img src="IMAGES/BANNER 1.png" alt="BANNER" width="1200" height="300">
+</div>
+
+<div class="navbar">
+  <a href="INDEX.html" class="active">HOME</a>
+  <a href="PROFILE.html">PROFILE</a>
+  <a href="EDUCATION.html">EDUCATION</a>
+  <a href="SKILLS.html">SKILLS</a>
+  <a href="EXPERIENCE.html">EXPERIENCE</a>
+  <a href="CONTACT" class="right">CONTACT</a>
+</div>
+
+<div class="row">
+  <div class="main">
+    <img src="IMAGES/uitm.png" alt="uitm" width="200" height="80">
+    <h4>COLLEGE OF COMPUTING, INFORMATICS AND MATHEMATICS<br>BACHELOR OF INFORMATION SCIENCE (HONS) RECORDS MANAGEMENT (IMR246)<br>IMS456 : BASIC WEB DESIGN AND CONTENT MANAGEMENT</h4>
+    <h4>INDIVIDUAL ASSIGNMENT</h4>
+    <p>E-RESUME WEBSITE</p>
+    <h4>PREPARED BY:</h4>
+    <p>NUR FARZANA BINTI HARMIDI (2022828506)</p>
+    <h4>GROUP:</h4>
+    <p>ELEK A</p>
+    <h4>SUBMISSION DATE:</h4>
+    <p>WEEK 11</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h4>© 2023 Nur Farzana's Resume. All Rights Reserved.</h4>
+  <h5>This website are for the purpose of assignment on HTML only.<br>Recommended browser Google Chrome.<br>Resolution 1366 X 768.</h5>
+  <h4>Last updated : </h4>
+    <p id="demo"></p>
+    <script>
+    let text = document.lastModified;
+    document.getElementById("demo").innerHTML = text;
+    </script>
+    
+</div>
+</body>
+</html>
